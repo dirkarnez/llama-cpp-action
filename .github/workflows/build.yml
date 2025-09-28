@@ -38,7 +38,7 @@ jobs:
           npm i -g concurrently
       
       - run: |
-          concurrently "./devtunnel host -p 8080 --allow-anonymous --protocol auto" "./llama-server -m ./Taiwan-LLM-7B-v2.1-chat-Q5_K_M.gguf"
+          concurrently "./devtunnel host -p 8080 --allow-anonymous --protocol auto" "./build/bin/llama-server -m ./Taiwan-LLM-7B-v2.1-chat-Q5_K_M.gguf"
       
     # # continue-on-error: true
     #   - name: set permission and run
